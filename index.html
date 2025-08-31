@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Bootcamp – HTML & CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1>🚀 Beginner Bootcamp</h1>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="module1.html">Module 1</a>
+                    <a href="module2.html">Module 2</a>
+                    <a href="module3.html">Module 3</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Learn HTML & CSS from Scratch</h2>
+                <p>Master the fundamentals of web development with our interactive learning platform. Complete modules, take quizzes, and practice coding in real-time.</p>
+                
+                <div class="progress-section">
+                    <h3>Your Progress</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <p class="progress-text" id="progressText">0% Complete</p>
+                </div>
+
+                <div class="modules-grid">
+                    <div class="module-card" data-module="1">
+                        <div class="module-header">
+                            <h3>Module 1: HTML Basics</h3>
+                            <span class="status" id="status1">Not Started</span>
+                        </div>
+                        <p>Learn about HTML tags, headings, and paragraphs. Build your first web page!</p>
+                        <a href="module1.html" class="btn">Start Learning</a>
+                    </div>
+
+                    <div class="module-card" data-module="2">
+                        <div class="module-header">
+                            <h3>Module 2: Intermediate HTML</h3>
+                            <span class="status" id="status2">Not Started</span>
+                        </div>
+                        <p>Explore images, links, and lists. Make your pages more interactive!</p>
+                        <a href="module2.html" class="btn">Start Learning</a>
+                    </div>
+
+                    <div class="module-card" data-module="3">
+                        <div class="module-header">
+                            <h3>Module 3: CSS Basics</h3>
+                            <span class="status" id="status3">Not Started</span>
+                        </div>
+                        <p>Style your pages with colors, fonts, and margins. Make them beautiful!</p>
+                        <a href="module3.html" class="btn">Start Learning</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Beginner Bootcamp. Learn to code, build amazing websites!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
