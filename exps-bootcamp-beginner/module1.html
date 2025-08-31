@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: HTML Basics - Beginner Bootcamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1>🚀 Beginner Bootcamp</h1>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="module1.html" class="active">Module 1</a>
+                    <a href="module2.html">Module 2</a>
+                    <a href="module3.html">Module 3</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="module-header">
+                <h2>Module 1: HTML Basics</h2>
+                <p class="module-description">Learn the fundamentals of HTML: tags, headings, and paragraphs.</p>
+            </div>
+
+            <div class="content-section">
+                <h3>Introduction to HTML</h3>
+                <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It describes the structure of a web page using a system of tags and elements.</p>
+                
+                <h4>Key Concepts:</h4>
+                <ul>
+                    <li><strong>Tags:</strong> HTML elements are defined by tags, usually in pairs like &lt;tag&gt;content&lt;/tag&gt;</li>
+                    <li><strong>Headings:</strong> Use &lt;h1&gt; to &lt;h6&gt; for different heading levels</li>
+                    <li><strong>Paragraphs:</strong> Use &lt;p&gt; tags to create text paragraphs</li>
+                    <li><strong>Document Structure:</strong> Every HTML document needs &lt;html&gt;, &lt;head&gt;, and &lt;body&gt; tags</li>
+                </ul>
+            </div>
+
+            <div class="code-section">
+                <h3>Practice Code</h3>
+                <p>Try writing some HTML code below and see the live preview!</p>
+                
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <span>HTML Code</span>
+                        <button id="runBtn" class="btn btn-primary">Run Code</button>
+                    </div>
+                    <textarea id="codeEditor" placeholder="Write your HTML code here...">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Page</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is my first paragraph.</p>
+    <h2>About Me</h2>
+    <p>I'm learning HTML!</p>
+</body>
+</html></textarea>
+                </div>
+
+                <div class="preview-section">
+                    <h4>Live Preview</h4>
+                    <div id="preview" class="preview-frame"></div>
+                </div>
+            </div>
+
+            <div class="quiz-section">
+                <h3>Quiz: HTML Basics</h3>
+                <div id="quiz" class="quiz-container">
+                    <div class="question" data-question="1">
+                        <h4>Question 1: What does HTML stand for?</h4>
+                        <div class="options">
+                            <label><input type="radio" name="q1" value="a"> HyperText Markup Language</label>
+                            <label><input type="radio" name="q1" value="b"> High Tech Modern Language</label>
+                            <label><input type="radio" name="q1" value="c"> Home Tool Markup Language</label>
+                            <label><input type="radio" name="q1" value="d"> Hyperlink and Text Markup Language</label>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="2">
+                        <h4>Question 2: Which tag is used for the main heading?</h4>
+                        <div class="options">
+                            <label><input type="radio" name="q2" value="a"> &lt;heading&gt;</label>
+                            <label><input type="radio" name="q2" value="b"> &lt;h1&gt;</label>
+                            <label><input type="radio" name="q2" value="c"> &lt;title&gt;</label>
+                            <label><input type="radio" name="q2" value="d"> &lt;main&gt;</label>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="3">
+                        <h4>Question 3: What tag is used to create a paragraph?</h4>
+                        <div class="options">
+                            <label><input type="radio" name="q3" value="a"> &lt;text&gt;</label>
+                            <label><input type="radio" name="q3" value="b"> &lt;paragraph&gt;</label>
+                            <label><input type="radio" name="q3" value="c"> &lt;p&gt;</label>
+                            <label><input type="radio" name="q3" value="d"> &lt;para&gt;</label>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="4">
+                        <h4>Question 4: Which of these is the correct HTML document structure?</h4>
+                        <div class="options">
+                            <label><input type="radio" name="q4" value="a"> &lt;html&gt;&lt;body&gt;&lt;head&gt;&lt;/html&gt;</label>
+                            <label><input type="radio" name="q4" value="b"> &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</label>
+                            <label><input type="radio" name="q4" value="c"> &lt;head&gt;&lt;html&gt;&lt;body&gt;&lt;/html&gt;</label>
+                            <label><input type="radio" name="q4" value="d"> &lt;body&gt;&lt;html&gt;&lt;head&gt;&lt;/html&gt;</label>
+                        </div>
+                    </div>
+
+                    <div class="question" data-question="5">
+                        <h4>Question 5: How many heading levels does HTML have?</h4>
+                        <div class="options">
+                            <label><input type="radio" name="q5" value="a"> 3</label>
+                            <label><input type="radio" name="q5" value="b"> 5</label>
+                            <label><input type="radio" name="q5" value="c"> 6</label>
+                            <label><input type="radio" name="q5" value="d"> 8</label>
+                        </div>
+                    </div>
+
+                    <button id="submitQuiz" class="btn btn-primary">Submit Quiz</button>
+                    <div id="quizResult" class="quiz-result"></div>
+                </div>
+            </div>
+
+            <div class="exercise-section">
+                <h3>Mini Exercise</h3>
+                <div class="exercise-content">
+                    <p><strong>Task:</strong> Create a simple HTML page about your favorite hobby. Include:</p>
+                    <ul>
+                        <li>A main heading (h1) with the hobby name</li>
+                        <li>A subheading (h2) saying "Why I love it"</li>
+                        <li>Two paragraphs describing your hobby</li>
+                    </ul>
+                    <p>Write your code in the editor above and click "Run Code" to see the result!</p>
+                </div>
+                <button id="completeExercise" class="btn btn-success">Mark Exercise Complete</button>
+            </div>
+
+            <div class="navigation-buttons">
+                <a href="index.html" class="btn btn-secondary">← Back to Home</a>
+                <a href="module2.html" class="btn btn-primary">Next Module →</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
